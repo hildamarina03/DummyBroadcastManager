@@ -14,9 +14,6 @@ public class SystemBroadcastReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        // TODO: This method is called when the BroadcastReceiver is receiving
-        // an Intent broadcast.
-//        throw new UnsupportedOperationException("Not yet implemented");
         if(intent.getAction() == Intent.ACTION_BATTERY_LOW){
             Log.v(SystemBroadcastReceiver.TAG, "Battery low-event caught!");
 
@@ -24,7 +21,6 @@ public class SystemBroadcastReceiver extends BroadcastReceiver {
             Log.v(SystemBroadcastReceiver.TAG, "Airplane mode event caught!");
 
         }else{
-
             Log.v(SystemBroadcastReceiver.TAG, "Unidentified event caught!");
 
 
